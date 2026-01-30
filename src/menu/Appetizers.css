@@ -1,0 +1,77 @@
+/* Appetizers.css — styles for the dish cards */
+.masakali-section {
+  margin-bottom: 2rem;
+  
+}
+.masakali-section-title {
+  margin: 0 0 12px 0;
+}
+.masakali-menu-grid {
+  display: grid;
+  gap: 12px;
+}
+.masakali-dish-card {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.02);
+}
+.masakali-dish-content {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 16px;
+  align-items: stretch;
+}
+.masakali-dish-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 0; /* allow text truncation */
+}
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.masakali-dish-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.masakali-dish-icon {
+  height: 20px;
+  margin-left: 8px;
+}
+.masakali-dish-price1 {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.masakali-dish-desc {
+  color: #888;
+}
+.masakali-dish-image {
+  width: 160px;
+  height: 120px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 auto;
+}
+
+/* Responsive: stack card content on small screens */
+@media (max-width: 600px) {
+  .masakali-dish-card {
+    flex-direction: column;
+  }
+  .masakali-dish-image {
+    width: 100%;
+    height: 160px;
+  }
+}
