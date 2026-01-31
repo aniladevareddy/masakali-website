@@ -46,6 +46,19 @@
   font-size: 3.5rem;
   margin: 1rem 0;
 }
+.video-hero-section{
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+.video-hero-overlay{
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.55);
+  z-index:2;
+}
+
 
 .video-hero-description {
   font-size: 1.1rem;

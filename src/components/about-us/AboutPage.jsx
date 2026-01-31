@@ -1,10 +1,16 @@
 import React from "react";
 import "./AboutPage.css";
-import masalaPapad from "./assets/img/masala-papad.png";
+import masalaPapad from "../../assets/img/masala-papad.png";
+import bg from "../../assets/img/background.jpg"; // ✅ SAME background
 
 export default function AboutPage() {
   return (
-    <main className="about-page">
+    <main
+      className="about-page"
+      style={{
+        backgroundImage: `linear-gradient(rgba(11, 12, 16, 0.78), rgba(11, 12, 16, 0.9)), url(${bg})`,
+      }}
+    >
       <section className="about-hero">
         <div className="about-hero-inner">
           <h1>About Masakali</h1>
@@ -13,7 +19,13 @@ export default function AboutPage() {
             vibrant spices, fresh ingredients, and recipes passed down through
             generations.
           </p>
-          <button onClick={() => document.getElementById("our-mission")?.scrollIntoView({ behavior: "smooth" })}>
+          <button
+            onClick={() =>
+              document
+                .getElementById("our-mission")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
             Learn More
           </button>
         </div>
@@ -49,19 +61,33 @@ export default function AboutPage() {
         <h2>Meet the Team</h2>
         <div className="team-grid">
           <div className="team-member">
-            <div className="team-photo" style={{ backgroundImage: `url(${masalaPapad})` }} />
+            <div
+              className="team-photo"
+              style={{ backgroundImage: `url(${masalaPapad})` }}
+            />
             <h4>Vikas (Chef Owner)</h4>
             <p>Founder & Head Chef — bringing family recipes to life.</p>
           </div>
+
           <div className="team-member">
-            <div className="team-photo" style={{ backgroundImage: `url(${masalaPapad})` }} />
-            <h4>Mahesh (Manager)</h4>
+            <div
+              className="team-photo"
+              style={{ backgroundImage: `url(${masalaPapad})` }}
+            />
+            <h4>Mahesh (Owner)</h4>
             <p>Hospitality and operations lead, focused on guest experience.</p>
           </div>
+
           <div className="team-member">
-            <div className="team-photo" style={{ backgroundImage: `url(${masalaPapad})` }} />
-            <h4>Pramod (Operations Lead)</h4>
-            <p>Operations Lead — overseeing day-to-day operations, logistics, and team coordination.</p>
+            <div
+              className="team-photo"
+              style={{ backgroundImage: `url(${masalaPapad})` }}
+            />
+            <h4>Pramod (Owner)</h4>
+            <p>
+              Operations Lead — overseeing day-to-day operations, logistics, and
+              team coordination.
+            </p>
           </div>
         </div>
       </section>
@@ -69,7 +95,9 @@ export default function AboutPage() {
       <section className="about-cta">
         <h3>Visit Us</h3>
         <p>We'd love to serve you — check our menu and drop by for a true taste of home.</p>
-        <a className="btn" href="/menu">Explore Menu</a>
+        <a className="btn" href="/menu">
+          Explore Menu
+        </a>
       </section>
     </main>
   );

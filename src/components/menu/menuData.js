@@ -1,8 +1,8 @@
-import masalaPapad from "../assets/img/masala-papad.png";
-import onionPakora from "../assets/img/onion-pakora.png";
-import alooSamosa from "../assets/img/aloo-samosa.png";
-import alooTikki from "../assets/img/aloo-tikki.png";
-import glutenIcon from "../assets/img/gluten.png";
+import masalaPapad from "../../assets/img/masala-papad.png";
+import onionPakora from "../../assets/img/onion-pakora.png";
+import alooSamosa from "../../assets/img/aloo-samosa.png";
+import alooTikki from "../../assets/img/aloo-tikki.png";
+import glutenIcon from "../../assets/img/gluten.png";
 
 export const appetizers = [
   {
