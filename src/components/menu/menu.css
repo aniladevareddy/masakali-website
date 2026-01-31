@@ -8,6 +8,10 @@
   min-height: 100vh;
 }
 
+.masakali-section-title{
+    font-color: #fff;
+}
+
 .menu-nav {
   background: linear-gradient(90deg, #fff6ec 0%, #fffef9 100%);
   padding: 8px;
@@ -43,7 +47,7 @@
 
 .masakali-section {
   margin-bottom: 2rem;
-  background: #fff;
+  background: #2c2727;
   padding: 16px;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(10,10,10,0.03);
@@ -51,7 +55,7 @@
 .masakali-section-title {
   margin: 0 0 12px 0;
   padding-left: 18px; /* move title slightly right */
-  color: #333;
+  color: #fff;
   font-size: 1.25rem;
   font-weight: 700;
   position: relative;

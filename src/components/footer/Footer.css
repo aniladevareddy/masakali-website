@@ -1,0 +1,239 @@
+/* ===============================
+   FOOTER BASE
+================================ */
+.ft {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* container */
+.ft-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+/* ===============================
+   TOP FOOTER
+================================ */
+.ft-top {
+  padding: 70px 0 40px;
+  background: #0b0c10; /* blends with your site */
+}
+
+/* gold box like your HTML background-color */
+.ft-box {
+  background: #b7a672;
+  border-radius: 18px;
+  padding: 44px 26px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* grid */
+.ft-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.ft-title {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 800;
+  color: rgba(14, 14, 14, 0.95);
+  letter-spacing: 0.02em;
+}
+
+.ft-text {
+  margin: 0 0 16px;
+  color: rgba(14, 14, 14, 0.9);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* ===============================
+   SOCIAL
+================================ */
+.ft-social {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 14px 0 0;
+}
+
+.ft-social a {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(14, 14, 14, 0.95);
+  text-decoration: none;
+  transition: transform 150ms ease, opacity 150ms ease, background 150ms ease;
+}
+
+.ft-social a:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+/* ===============================
+   LINKS
+================================ */
+.ft-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.ft-links a {
+  color: rgba(14, 14, 14, 0.92);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.ft-links a:hover {
+  opacity: 0.85;
+  transform: translateX(2px);
+}
+
+/* ===============================
+   CONTACT
+================================ */
+.ft-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.ft-contact li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.ft-ico {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(14, 14, 14, 0.95);
+}
+
+.ft-ico a {
+  color: rgba(14, 14, 14, 0.95);
+  text-decoration: none;
+}
+
+.ft-contact-text,
+.ft-contact-text a {
+  color: rgba(14, 14, 14, 0.92);
+  text-decoration: none;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.ft-contact-text a:hover {
+  opacity: 0.85;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.ft-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: rgba(14, 14, 14, 0.92);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  transition: transform 150ms ease, opacity 150ms ease;
+}
+
+.ft-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+/* ===============================
+   BOTTOM FOOTER
+================================ */
+.ft-bottom {
+  position: relative;
+  background: #0b0c10;
+  padding: 26px 0;
+  overflow: hidden;
+}
+
+.ft-bottom-shape {
+  position: absolute;
+  inset: auto 0 0 0;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.ft-bottom-shape img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ft-bottom-row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.ft-logo img {
+  height: 44px;
+  width: auto;
+}
+
+.ft-copy {
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 600;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 980px) {
+  .ft-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ft-box {
+    padding: 36px 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .ft-grid {
+    grid-template-columns: 1fr;
+  }
+  .ft-bottom-row {
+    justify-content: center;
+    text-align: center;
+  }
+}

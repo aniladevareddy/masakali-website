@@ -1,0 +1,191 @@
+/* ===============================
+   MENU TABS WRAPPER
+================================ */
+.mt-wrap {
+  width: 100%;
+  padding: 28px 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+/* ===============================
+   ELEMENTOR-LIKE HEADING BLOCK
+================================ */
+.mt-head {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+/* Small kicker */
+.mt-kicker {
+       font-family: "Dancing Script", Sans-serif;
+  margin: 0;
+  font-size: 25px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #dfab0d;
+  opacity: 0.9;
+  font-weight: 700;
+
+  animation: mtSlideUp 700ms ease both;
+  animation-delay: 200ms;
+}
+
+/* Main heading */
+.mt-title {
+  margin: 8px 0 0;
+  font-size: clamp(10px, 3vw, 34px);
+  line-height: 1.15;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+
+  animation: mtSlideUp 700ms ease both;
+  animation-delay: 400ms;
+}
+
+/* Spacer like Elementor */
+.mt-spacer {
+  height: 16px;
+}
+
+/* ===============================
+   TABS
+================================ */
+.mt-tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.mt-tab {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 150ms ease, background 150ms ease, opacity 150ms ease;
+}
+
+.mt-tab:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.mt-tab.active {
+  background: #dfab0d;
+  color: #0b0c10;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* ===============================
+   CONTENT LAYOUT
+================================ */
+.mt-content {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 18px;
+  align-items: start;
+}
+
+/* ===============================
+   LEFT HERO IMAGE
+================================ */
+.mt-hero {
+  height: 420px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ===============================
+   MENU LIST
+================================ */
+.mt-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.mt-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mt-thumb {
+  width: 74px;
+  height: 74px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.mt-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.mt-name {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.mt-dash {
+  flex: 1;
+  border-bottom: 1px dashed rgba(223, 167, 117, 0.65);
+}
+
+.mt-price {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* ===============================
+   ANIMATION (Elementor-style)
+================================ */
+@keyframes mtSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .mt-kicker,
+  .mt-title {
+    animation: none;
+  }
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .mt-content {
+    grid-template-columns: 1fr;
+  }
+
+  .mt-hero {
+    height: 320px;
+  }
+}

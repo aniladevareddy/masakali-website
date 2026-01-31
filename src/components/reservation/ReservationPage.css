@@ -1,0 +1,108 @@
+.res-page {
+  min-height: 100vh;
+  padding: 120px 18px 60px;
+  color: #fff;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.res-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.res-heading {
+  margin: 0 0 22px;
+  text-align: center;
+  font-size: clamp(28px, 3.8vw, 42px);
+  font-weight: 700;
+  color: #dfa775;
+  letter-spacing: 0.02em;
+}
+
+.res-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+.res-form {
+  display: grid;
+  gap: 16px;
+}
+
+.res-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.res-field {
+  display: grid;
+  gap: 8px;
+}
+
+.res-label {
+  font-weight: 700;
+  opacity: 0.9;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.res-input,
+.res-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.22);
+  color: #fff;
+  outline: none;
+}
+
+.res-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.res-input:focus,
+.res-textarea:focus {
+  border-color: rgba(223, 167, 117, 0.8);
+}
+
+.res-btn {
+  margin-top: 6px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 0;
+  background: #dfa775;
+  color: #0b0c10;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 150ms ease, opacity 150ms ease;
+}
+
+.res-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.res-note {
+  margin: 6px 0 0;
+  opacity: 0.75;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .res-row {
+    grid-template-columns: 1fr;
+  }
+}
