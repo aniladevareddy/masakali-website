@@ -1,3 +1,66 @@
+.masakali-section {
+  margin: 2.5rem auto 2.5rem auto;
+  max-width: 820px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+}
+.masakali-section-title {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  color: #b02727;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  border-bottom: 1.5px solid #eee;
+  padding-bottom: 0.5rem;
+  position: static !important;
+  top: unset !important;
+  background: none !important;
+  z-index: auto !important;
+}
+.clean-dish-card {
+  padding: 1.1rem 0.5rem 0.7rem 0.5rem;
+  border-bottom: 2px dashed #e0c7a7;
+  background: #fff;
+  margin-bottom: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(220,180,120,0.04);
+}
+.clean-dish-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 1.13rem;
+  font-weight: 600;
+  color: #222;
+  font-family: 'Georgia', serif;
+}
+.clean-dish-title {
+  flex: 1;
+  text-align: left;
+  font-size: 1.08rem;
+  font-family: 'Georgia', serif;
+}
+.clean-dish-price {
+  min-width: 70px;
+  text-align: right;
+  color: #b02727;
+  font-size: 1.08rem;
+  font-family: 'Georgia', serif;
+}
+.clean-dish-desc {
+  font-size: 0.99rem;
+  color: #555;
+  margin-top: 0.18rem;
+  text-align: left;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+
+/* Sidebar Navigation for MenuPage */
+
 /* menu.css — shared styles for all menu sections */
 
 /* Page and tab styling */
@@ -18,7 +81,6 @@
 .menu-nav .second-one {
   display: flex;
   gap: 8px;
-  margin-top: 6rem;
   flex-wrap: wrap;
   justify-content: center;
 }

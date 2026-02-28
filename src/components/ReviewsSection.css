@@ -1,0 +1,11 @@
+.reviews-section {
+  padding: 3rem 0;
+  background: #fff8f0;
+  text-align: center;
+}
+
+.reviews-placeholder {
+  color: #888;
+  font-style: italic;
+  margin-top: 1rem;
+}

@@ -1,21 +1,34 @@
 .video-hero-section {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
+  min-height: 340px;
+  max-height: 80vh;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Video layer */
 .video-hero-background {
   position: absolute;
-  inset: 0;
-  height: 60vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-hero-bg {
-  width: 100vw;       /* FULL viewport width */
+  width: 100vw;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background: #000;
 }
 
 

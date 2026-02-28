@@ -1,0 +1,57 @@
+.drinks-page-outer {
+  max-width: 600px;
+  margin: 2.5rem auto;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(220,180,120,0.13);
+  padding: 2.7rem 2.5rem 2.2rem 2.5rem;
+  border: 2.5px solid #ffb74d;
+}
+.drinks-page-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: 'Oswald', sans-serif;
+  color: #3e382f;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.drinks-page-desc {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+.drinks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.drink-card {
+  background: #fffdfa;
+  border-radius: 0.8rem;
+  border: 1.5px solid #ffe9c9;
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(220,180,120,0.07);
+}
+.drink-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+}
+.drink-name {
+  font-weight: 700;
+}
+.drink-price {
+  color: #b02727;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.drink-desc {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}

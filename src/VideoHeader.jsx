@@ -1,5 +1,5 @@
 import "./videoHero.css";
-import heroVideoMp4 from "./assets/video/vid.mp4";
+import heroVideoMp4 from "./assets/video/vid1.mp4";
 
 function VideoHeader() {
   return (

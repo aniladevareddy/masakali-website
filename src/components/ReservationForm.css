@@ -1,0 +1,182 @@
+/* Unique background for reservation form only */
+.reservation-form-bg {
+  background: linear-gradient(135deg, #fff8e1cc 80%, #ffe0b2cc 100%), url('/src/assets/img/bg_image1.png') center/cover no-repeat !important;
+  border-radius: 1.3rem;
+  box-shadow: 0 8px 32px rgba(220,180,120,0.13);
+  border: 2.5px solid #ffb74d;
+}
+.form-row-container {
+  display: flex;
+  gap: 4rem;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+ .form-input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 180px;
+  margin-bottom: 0.4rem;
+}
+/* Add extra margin below Phone, Email, and Special Requests fields */
+.form-input-group:nth-child(2), /* Phone Number (in first row) */
+.form-input-group:nth-child(2) ~ .form-input-group, /* Email Address (after first row) */
+.form-input-group:last-of-type /* Special Requests */ {
+  margin-bottom: 0.7rem;
+}
+.input-label {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.3rem;
+  font-size: 1.08rem;
+  letter-spacing: 0.2px;
+}
+.text-input-field, .date-input-field, .select-dropdown, .textarea-field {
+  width: 100%;
+  padding: 0.7rem 1.1rem;
+  border: 1.5px solid #b3c6e0;
+  border-radius: 0.7rem;
+  font-size: 1.08rem;
+  background: #fafdff;
+  margin-top: 0.2rem;
+  margin-bottom: 0.1rem;
+  font-family: inherit;
+  transition: border 0.2s;
+}
+.text-input-field:focus, .date-input-field:focus, .select-dropdown:focus, .textarea-field:focus {
+  border: 2px solid #ffb74d;
+  outline: none;
+}
+.select-dropdown {
+  /* Removed custom color and background for default browser style */
+}
+.select-dropdown {
+  /* Removed custom color and background for default browser style */
+}
+.reservation-submit-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: #3e382f;
+  z-index: 0;
+  transition: width 0.35s cubic-bezier(.4,1,.6,1);
+}
+.reservation-submit-btn:hover {
+  color: #fff;
+  background: #3e382f;
+  border-color: #3e382f;
+}
+.reservation-submit-btn:hover::before {
+  width: 100%;
+}
+.reservation-submit-btn span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.2s;
+  font-size: 1.13rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.reservation-submit-btn:hover span {
+  color: rgb(255,255,255) !important;
+}
+.reservation-form-outer {
+  max-width: 600px;
+  margin: 2.5rem auto 2.5rem auto;
+  background: transparent;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(220,180,120,0.13);
+  padding: 2.7rem 2.5rem 2.2rem 2.5rem;
+  border: 2.5px solid #ffb74d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Removed white overlay to allow background image to show */
+}
+
+.reservation-form-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: 'Oswald', sans-serif;
+  color: #222;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.reservation-form-notes {
+  background: #fff8e1;
+  border-radius: 0.8rem;
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.01rem;
+  color: #222;
+  border: 1.5px solid #ffe9c9;
+}
+.reservation-form-notes ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.reservation-form-notes li {
+  margin-bottom: 0.5rem;
+}
+
+
+.reservation-form {
+  max-width: 540px;
+  margin: 2.5rem auto 2.5rem auto;
+  background: linear-gradient(120deg, #fff8f0 60%, #ffe9c9 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(220,180,120,0.13);
+  padding: 3.2rem 3.7rem 2.7rem 2.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border: 2.5px solid #ffb74d;
+}
+.reservation-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 700;
+  color: #222;
+  gap: 0.4rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.13rem;
+  letter-spacing: 0.2px;
+}
+.reservation-form input,
+.reservation-form textarea {
+  width: 100%;
+  padding: 0.7rem 1.1rem;
+  border: 1.5px solid #d4a762;
+  border-radius: 0.7rem;
+  font-size: 1.08rem;
+  background: #fffdfa;
+  margin-top: 0.2rem;
+  margin-bottom: 0.1rem;
+  font-family: inherit;
+  transition: border 0.2s;
+  color: #222;
+}
+.reservation-form input:focus,
+.reservation-form textarea:focus {
+  border: 2px solid #ffb74d;
+  outline: none;
+}
+
+.reservation-success {
+  text-align: center;
+  color: #388e3c;
+  font-size: 1.35rem;
+  margin: 2.5rem 0;
+  font-weight: 700;
+  background: #f7ffe6;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  border: 1.5px solid #b6e388;
+}

@@ -62,11 +62,6 @@ export default function FoodGallery() {
         loop
         autoplay={{ delay: 2500 }}
         pagination={{ clickable: true }}
-        breakpoints={{
-          0: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1200: { slidesPerView: 3 },
-        }}
       >
         {galleryData.map((item, index) => (
           <SwiperSlide key={index}>

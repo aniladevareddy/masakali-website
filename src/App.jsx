@@ -1,24 +1,46 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import TopNavbar from "./TopNavbar";
-import HomePage from "./HomePage";
-import AboutPage from "./AboutPage";
-import MenuPage from "./MenuPage";
-import ContactPage from "./ContactPage";
-import ReservationModal from "./components/ReservationModal";
+import React from 'react';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import MenuSection from './components/MenuSection';
+import ReservationSection from './components/ReservationSection';
+import CateringSection from './components/CateringSection';
+import GallerySection from './components/GallerySection';
+import ReviewsSection from './components/ReviewsSection';
+import NewsletterSection from './components/NewsletterSection';
+import LocationSection from './components/LocationSection';
+import HoursSection from './components/HoursSection';
+import ContactSection from './components/ContactSection';
+import DrinksPage from './components/DrinksPage.jsx';
+
+import { Routes, Route } from 'react-router-dom';
+import MenuPage from './MenuPage.jsx';
+import ReservationPage from './pages/ReservationPage.jsx';
+import CateringPage from './pages/CateringPage.jsx';
 
 function App() {
   return (
-    <Router>
-      <TopNavbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/menu" element={<MenuPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-
-      <ReservationModal />
-    </Router>
+    <Routes>
+      <Route path="/" element={
+        <>
+          <Navbar />
+          <div id="home"><HeroSection /></div>
+          <div id="about"><AboutSection /></div>
+          <div id="reservation"><ReservationSection /></div>
+          <div id="catering"><CateringSection /></div>
+          <div id="gallery"><GallerySection /></div>
+          <div id="reviews"><ReviewsSection /></div>
+          <div id="newsletter"><NewsletterSection /></div>
+          <div id="location"><LocationSection /></div>
+          <div id="hours"><HoursSection /></div>
+          <div id="contact"><ContactSection /></div>
+        </>
+      } />
+      <Route path="/menu" element={<><Navbar /><MenuPage /></>} />
+      <Route path="/reservation" element={<ReservationPage />} />
+      <Route path="/catering" element={<CateringPage />} />
+      <Route path="/drinks" element={<><Navbar /><DrinksPage /></>} />
+    </Routes>
   );
 }
 

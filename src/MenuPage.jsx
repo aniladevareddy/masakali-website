@@ -1,57 +1,41 @@
-import React, { useState } from "react";
-import Appetizers from "./menu/Appetizers.jsx";
-import Mains from "./menu/Mains.jsx";
-import Sides from "./menu/Sides.jsx";
-import VeganAppetizers from "./menu/VeganAppetizers.jsx";
-import VeganHakka from "./menu/VeganHakka.jsx";
-import VeganCurries from "./menu/VeganCurries.jsx";
-import VeganRice from "./menu/VeganRice.jsx";
-import DishModal from "./components/DishModal.jsx";
+
+
+import React from "react";
+import { appetizers, tandoori, biryaniRice, curries, chefsSpecial } from "./menu/menuData";
+import './menu/MenuPage.css';
+
+const menuSections = [
+  { id: "appetizers", title: "Appetizers", dishes: appetizers },
+  { id: "tandoori", title: "Tandoori", dishes: tandoori },
+  { id: "biryani-rice", title: "Biryani & Rice", dishes: biryaniRice },
+  { id: "curries", title: "Curries", dishes: curries },
+  { id: "chefs-special", title: "Chef's Special", dishes: chefsSpecial },
+];
 
 export default function MenuPage() {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) section.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalDish, setModalDish] = useState(null);
-
-  const openPopup = (title, price, extra, desc, img, icon) => {
-    setModalDish({ title, price, desc, img, icon });
-    setModalOpen(true);
-  };
-
-  const closePopup = () => {
-    setModalOpen(false);
-    setModalDish(null);
-  };
-
   return (
-    <main className="menu-page">
-      <div className="menu-nav">
-        <div className="second-one">
-          <button onClick={() => scrollToSection("appetizers")}>Appetizers</button>
-          <button onClick={() => scrollToSection("mains")}>Mains</button>
-          <button onClick={() => scrollToSection("sides")}>Sides</button>
-          <button onClick={() => scrollToSection("vegan-appetizers")}>Vegan Appetizers</button>
-          <button onClick={() => scrollToSection("vegan-hakka")}>Vegan Hakka</button>
-          <button onClick={() => scrollToSection("vegan-curries")}>Vegan Curries</button>
-          <button onClick={() => scrollToSection("vegan-rice")}>Vegan Rice</button>
+    <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+      <div className="menu-page-outer">
+        <h2 className="menu-page-title">Our Menu</h2>
+        <p className="menu-page-desc">Explore our delicious selection of Indian cuisine, made fresh to order.</p>
+        <div className="menu-list">
+          {menuSections.map(section => (
+            <div className="menu-section-block" key={section.id} id={section.id}>
+              <div className="menu-section-header">{section.title}</div>
+              {section.dishes.map((dish, i) => (
+                <div className="menu-dish-card" key={dish.title + i}>
+                  <div className="menu-dish-row">
+                    <span className="menu-dish-title">{dish.title}</span>
+                    <span className="menu-dish-price">${dish.price}</span>
+                  </div>
+                  <div className="menu-dish-desc">{dish.desc}</div>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
-
-      <Appetizers openPopup={openPopup} />
-
-      <Mains openPopup={openPopup} />
-      <Sides openPopup={openPopup} />
-      <VeganAppetizers openPopup={openPopup} />
-      <VeganHakka openPopup={openPopup} />
-      <VeganCurries openPopup={openPopup} />
-      <VeganRice openPopup={openPopup} />
-
-      <DishModal open={modalOpen} dish={modalDish} onClose={closePopup} />
-    </main>
+    </div>
   );
 }
 
