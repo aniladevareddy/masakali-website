@@ -1,3 +1,56 @@
+/* Reservation Welcome Section Styles */
+.reservation-header {
+  text-align: center;
+  padding: 2.2rem 1rem 1.7rem 1rem;
+  background: #fafdff;
+  border-radius: 1.1rem;
+  margin: 2rem auto 0 auto;
+  max-width: 650px;
+  box-shadow: 0 2px 12px 0 #e7e7e7;
+}
+.reservation-header h2 {
+  font-family: var(--font-heading, 'Marcellus', serif);
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.welcome-message {
+  font-family: var(--font-default, 'Lato', sans-serif);
+  color: #333;
+  font-size: 1.12rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 540px;
+  background: #fff;
+  border-radius: 0.7rem;
+  padding: 1.2rem 1rem 1rem 1rem;
+  box-shadow: 0 2px 12px 0 #e7e7e7;
+}
+.welcome-message p {
+  margin-bottom: 1.1rem;
+}
+.welcome-message p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 700px) {
+  .reservation-header {
+    padding: 1.1rem 0.3rem 0.7rem 0.3rem;
+    max-width: 98vw;
+    margin: 1.2rem auto 0 auto;
+    border-radius: 0.7rem;
+  }
+  .reservation-header h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .welcome-message {
+    padding: 0.7rem 0.3rem 0.5rem 0.3rem;
+    font-size: 0.98rem;
+    border-radius: 0.5rem;
+  }
+}
 @media (max-width: 700px) {
   .reservation-form-outer {
     max-width: 98vw;
@@ -32,7 +85,7 @@
 }
 .form-row-container {
   display: flex;
-  gap: 4rem;
+  gap: 1rem;
   width: 100%;
   margin-bottom: 0.7rem;
 }
@@ -83,7 +136,7 @@
   border: 1.5px solid #111;
   display: block;
   margin: 0 auto;
-  min-width: 240px;
+  min-width: 210px;
   padding-left: 2.8em;
   padding-right: 2.8em;
 }
@@ -185,8 +238,14 @@
   letter-spacing: 0.2px;
 }
 .reservation-form input,
-.reservation-form textarea {
+.reservation-form textarea,
+.reservation-form select,
+.reservation-submit-btn {
   width: 100%;
+  box-sizing: border-box;
+}
+.reservation-form input,
+.reservation-form textarea {
   padding: 0.7rem 1.1rem;
   border: 1.5px solid #d4a762;
   border-radius: 0.7rem;

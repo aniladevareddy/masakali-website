@@ -1,5 +1,6 @@
 #root {
   width: 100%;
+  overflow-x: hidden;
   min-height: 100%;
   box-sizing: border-box;
 }
