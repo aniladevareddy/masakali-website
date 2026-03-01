@@ -1,0 +1,125 @@
+.reservation-sidebyside-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  padding: 3rem 0 2rem 0;
+  background: url('../assets/img/bg_image1.png') center/cover no-repeat;
+}
+
+.reservation-sidebyside-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.reservation-sidebyside-image {
+  max-width: 420px;
+  min-width: 320px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 32px rgba(220,180,120,0.13);
+}
+
+.reservation-sidebyside-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 320px;
+  margin-left: 1.5rem;
+}
+
+.reservation-sidebyside-subheader {
+  font-size: 1.2em;
+  color: #d4a762;
+  margin-bottom: 1.2em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  max-width: 540px;
+  letter-spacing: 0.5px;
+}
+
+.reservation-sidebyside-btn {
+  font-size: 1.18rem;
+  padding: 1rem 2.7rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .reservation-sidebyside-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .reservation-sidebyside-content {
+    align-items: center;
+    min-width: unset;
+  }
+  .reservation-sidebyside-subheader {
+    text-align: center;
+    max-width: 90vw;
+  }
+}
+.reservation-btn:focus,
+.reservation-btn:active,
+.reservation-btn:hover {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.reservation-section {
+  padding: 3rem 0;
+  background: #fff;
+  text-align: center;
+}
+
+.reservation-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background: #fff;
+  color: #111;
+  border: 1.5px solid #111;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  z-index: 1;
+}
+.reservation-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: #3e382f;
+  z-index: 0;
+  transition: width 0.35s cubic-bezier(.4,1,.6,1);
+}
+
+.reservation-btn:hover {
+  outline: none !important;
+  box-shadow: none !important;
+  background: #3e382f;
+  color: #fff !important;
+}
+.reservation-btn:hover::before {
+  width: 100%;
+}
+.reservation-btn span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.2s;
+}
+.reservation-btn:hover span {
+  color: rgb(255,255,255) !important;
+}
