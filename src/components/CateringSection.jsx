@@ -1,5 +1,5 @@
         <button className="catering-btn" onClick={() => navigate('/catering')}>
-          Catering Inquiry
+          <span>Catering Inquiry</span>
         </button>
 
 import React from 'react';
@@ -19,7 +19,7 @@ const CateringSection = () => {
       <div className="catering-sidebyside-content">
         <p className="catering-subheader catering-sidebyside-subheader">Stress-free catering for your next event. Fill out our quick form and we’ll get back to you!</p>
         <button className="catering-btn catering-sidebyside-btn" onClick={() => navigate('/catering')}>
-          Catering Inquiry
+          <span>Catering Inquiry</span>
         </button>
       </div>
     </section>

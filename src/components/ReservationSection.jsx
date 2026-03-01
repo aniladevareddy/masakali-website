@@ -16,7 +16,7 @@ const ReservationSection = () => {
       <div className="reservation-sidebyside-content">
         <p className="reservation-subheader reservation-sidebyside-subheader">Reserve your dining experience in advance.</p>
         <button className="reservation-btn reservation-sidebyside-btn" onClick={() => navigate('/reservation')}>
-          Book a Table
+          <span>Book a Table</span>
         </button>
       </div>
     </section>

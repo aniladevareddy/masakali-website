@@ -17,6 +17,7 @@ import { Routes, Route } from 'react-router-dom';
 import MenuPage from './MenuPage.jsx';
 import ReservationPage from './pages/ReservationPage.jsx';
 import CateringPage from './pages/CateringPage.jsx';
+import AboutPage from './AboutPage.jsx';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <Route path="/menu" element={<><Navbar /><MenuPage /></>} />
       <Route path="/reservation" element={<ReservationPage />} />
       <Route path="/catering" element={<CateringPage />} />
+      <Route path="/about" element={<><Navbar /><AboutPage /></>} />
       <Route path="/drinks" element={<><Navbar /><DrinksPage /></>} />
     </Routes>
   );

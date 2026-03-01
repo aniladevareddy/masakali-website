@@ -1,3 +1,14 @@
+/* Unified catering section header style */
+.catering-section-header {
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: 'Georgia', serif;
+  color: #7a3b00;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #fff8, 0 1px 0 #fff;
+}
 .catering-sidebyside-section {
   display: flex;
   flex-direction: row;
@@ -139,6 +150,7 @@
   overflow: hidden;
   transition: color 0.2s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  z-index: 2;
 }
 .catering-btn::before {
   content: '';
@@ -151,20 +163,16 @@
   z-index: 0;
   transition: width 0.35s cubic-bezier(.4,1,.6,1);
 }
-.catering-btn:hover {
-  color: #fff;
-}
 .catering-btn:hover::before {
   width: 100%;
 }
-.catering-btn {
-  z-index: 1;
+.catering-btn:hover,
+.catering-btn:hover span {
+  color: #fff !important;
 }
 .catering-btn span {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   transition: color 0.2s;
-}
-.catering-btn:hover span {
-  color: rgb(255,255,255) !important;
+  background: transparent;
 }

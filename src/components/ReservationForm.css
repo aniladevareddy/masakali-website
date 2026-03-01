@@ -1,3 +1,28 @@
+@media (max-width: 700px) {
+  .reservation-form-outer {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    margin: 1.2rem 0.2rem;
+    border-radius: 0.7rem;
+  }
+  .reservation-form {
+    max-width: 100vw;
+    padding: 1rem 0.2rem;
+    gap: 0.7rem;
+  }
+  .form-row-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .form-input-group {
+    min-width: 0;
+    margin-bottom: 0.3rem;
+  }
+  .reservation-form-title {
+    font-size: 1.3rem;
+    padding: 0 0.2rem;
+  }
+}
 /* Unique background for reservation form only */
 .reservation-form-bg {
   background: linear-gradient(135deg, #fff8e1cc 80%, #ffe0b2cc 100%), url('/src/assets/img/bg_image1.png') center/cover no-repeat !important;
@@ -53,6 +78,15 @@
 .select-dropdown {
   /* Removed custom color and background for default browser style */
 }
+/* Set default border color for reservation-submit-btn to black */
+.reservation-submit-btn {
+  border: 1.5px solid #111;
+  display: block;
+  margin: 0 auto;
+  min-width: 240px;
+  padding-left: 2.8em;
+  padding-right: 2.8em;
+}
 .reservation-submit-btn::before {
   content: '';
   position: absolute;
@@ -60,7 +94,8 @@
   top: 0;
   width: 0%;
   height: 100%;
-  background: #3e382f;
+
+  /* background: #3e382f; */
   z-index: 0;
   transition: width 0.35s cubic-bezier(.4,1,.6,1);
 }

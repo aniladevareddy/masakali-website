@@ -19,7 +19,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="our-mission" className="about-section">
+      <section id="our-mission" className="about-page-section">
         <h2>Our Mission</h2>
         <p>
           To craft memorable meals using the freshest ingredients while honoring
@@ -27,7 +27,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="about-section about-values">
+      <section className="about-page-section about-values">
         <h2>Our Values</h2>
         <div className="values-grid">
           <div className="value-card">
@@ -45,32 +45,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="about-section about-team">
-        <h2>Meet the Team</h2>
-        <div className="team-grid">
-          <div className="team-member">
-            <div className="team-photo" style={{ backgroundImage: `url(${masalaPapad})` }} />
-            <h4>Vikas (Chef Owner)</h4>
-            <p>Founder & Head Chef — bringing family recipes to life.</p>
-          </div>
-          <div className="team-member">
-            <div className="team-photo" style={{ backgroundImage: `url(${masalaPapad})` }} />
-            <h4>Mahesh (Manager)</h4>
-            <p>Hospitality and operations lead, focused on guest experience.</p>
-          </div>
-          <div className="team-member">
-            <div className="team-photo" style={{ backgroundImage: `url(${masalaPapad})` }} />
-            <h4>Pramod (Operations Lead)</h4>
-            <p>Operations Lead — overseeing day-to-day operations, logistics, and team coordination.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="about-cta">
-        <h3>Visit Us</h3>
-        <p>We'd love to serve you — check our menu and drop by for a true taste of home.</p>
-        <a className="btn" href="/menu">Explore Menu</a>
-      </section>
+     
     </main>
   );
 }

@@ -92,6 +92,7 @@
   overflow: hidden;
   transition: color 0.2s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  z-index: 1;
 }
 .reservation-btn::before {
   content: '';
@@ -104,14 +105,15 @@
   z-index: 0;
   transition: width 0.35s cubic-bezier(.4,1,.6,1);
 }
+
 .reservation-btn:hover {
-  color: #fff;
+  outline: none !important;
+  box-shadow: none !important;
+  background: #3e382f;
+  color: #fff !important;
 }
 .reservation-btn:hover::before {
   width: 100%;
-}
-.reservation-btn {
-  z-index: 1;
 }
 .reservation-btn span {
   position: relative;

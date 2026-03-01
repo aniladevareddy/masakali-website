@@ -61,7 +61,7 @@ const Navbar = () => {
           <li><Link to="/drinks">Drinks</Link></li>
           <li><Link to="/reservation">Reservation</Link></li>
           <li><Link to="/catering">Catering</Link></li>
-          <li><a href="/#about">About</a></li>
+          <li><Link to="/about">About</Link></li>
         </ul>
       </div>
       {/* Mobile collapse menu, slides from top under navbar */}
@@ -76,7 +76,7 @@ const Navbar = () => {
           <li><Link to="/drinks" onClick={handleLinkClick}>Drinks</Link></li>
           <li><Link to="/reservation" onClick={handleLinkClick}>Reservation</Link></li>
           <li><Link to="/catering" onClick={handleLinkClick}>Catering</Link></li>
-          <li><a href="/#about" onClick={handleLinkClick}>About</a></li>
+          <li><Link to="/about" onClick={handleLinkClick}>About</Link></li>
         </ul>
       </div>
     </nav>

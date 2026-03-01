@@ -30,6 +30,8 @@
 .about-btn:hover {
   outline: none !important;
   box-shadow: none !important;
+  background: #3e382f;
+  color: #fff !important;
 }
 
 .about-section {
@@ -51,7 +53,7 @@ body {
 }
 
 .about-header {
-  font-size: 3.5em;
+  font-size: 2em;
   margin-bottom: 0.5rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -104,8 +106,7 @@ body {
   z-index: 0;
   transition: width 0.35s cubic-bezier(.4,1,.6,1);
 }
-.about-btn:hover {
-  color: #fff;
+  color: #fff !important;
 }
 .about-btn:hover::before {
   width: 100%;

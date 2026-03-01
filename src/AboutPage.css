@@ -29,6 +29,18 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+  .about-hero h1 {
+    font-size: 1.2rem;
+  }
+  .about-hero p, .about-page-section p, .about-page-section h2, .about-page-section h3, .about-page-section h4, .about-cta h3, .about-cta p, .about-cta .btn {
+    font-size: 0.95rem;
+  }
+  .value-card, .team-member {
+    padding: 0.5rem;
+  }
+  .team-photo {
+    height: 90px;
+  }
 }
 /* Add horizontal padding to About Us section */
 .about-page, .about-page-section, .about-hero, .about-container, .about-section {
