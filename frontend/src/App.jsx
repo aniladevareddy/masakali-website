@@ -1,4 +1,4 @@
-import React from 'react';
+import {useEffect} from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
@@ -18,8 +18,15 @@ import MenuPage from './MenuPage.jsx';
 import ReservationPage from './pages/ReservationPage.jsx';
 import CateringPage from './pages/CateringPage.jsx';
 import AboutPage from './AboutPage.jsx';
+import axios from 'axios'
 
 function App() {
+   useEffect(()=>{
+    axios.post("/api/products").then(x=>{
+      console.log("this is the res", x)
+    })
+
+  },[])
   return (
     <Routes>
       <Route path="/" element={
