@@ -1,0 +1,39 @@
+.brand-area {
+  padding: 2.5rem 0;
+  background: transparent;
+}
+.brand-style-one-carousel {
+  overflow: hidden;
+}
+.brand-carousel-track {
+  display: flex;
+  gap: 30px;
+  padding: 1rem 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.brand-slide {
+  min-width: 210px;
+  scroll-snap-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.brand-thumb img {
+  max-width: 100%;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+.brand-meta {
+  margin: 0;
+  font-size: 0.92rem;
+}
+.brand-link { color: #25a670; text-decoration: none; }
+.brand-phone { color: #25a670; display: inline-block; margin-top: 6px; }
+
+@media (min-width: 900px) {
+  .brand-carousel-track { justify-content: center; }
+}

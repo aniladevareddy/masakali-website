@@ -6,15 +6,16 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../assets/img/logo.png';
 import { Link } from 'react-router-dom';
+import contactInfo from '../data/contactInfo';
 
 // Contact strip above navbar
 const ContactStrip = () => (
   <div className="contact-strip-inner">
-    <a href="tel:+14088586274" className="contact-link">
-      <i className="fa fa-phone"></i> (408) 858-6274
+    <a href={`tel:${contactInfo.phoneHref}`} className="contact-link">
+      <i className="fa fa-phone"></i> {contactInfo.phoneDisplay}
     </a>
-    <a href="https://www.google.com/maps/search/?api=1&query=10310+S+De+Anza+Blvd,+Cupertino,+CA" target="_blank" rel="noopener noreferrer" className="contact-link">
-      <i className="fa fa-map-marker"></i> 10310 S De Anza Blvd, Cupertino, CA
+    <a href={contactInfo.mapsLink} target="_blank" rel="noopener noreferrer" className="contact-link">
+      <i className="fa fa-map-marker"></i> {contactInfo.addressText}
     </a>
   </div>
 );
