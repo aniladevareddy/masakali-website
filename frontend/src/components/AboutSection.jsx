@@ -13,7 +13,7 @@ const AboutSection = () => {
         <h2 className="about-subheader">Authentic Indian Cuisine</h2>
         <p className="about-center">Welcome to Masakali</p>
         <p className="about-center">Masakali is dedicated to bringing you the vibrant flavors of India, crafted with passion and fresh ingredients. Our chefs blend traditional recipes with modern techniques to create a memorable dining experience.</p>
-        <p className="about-center">For reservations or catering, call us at <a href="tel:+15551234567">(555) 123-4567</a>. <br/> <strong>Location: Coming Soon</strong></p>
+        <p className="about-center">For reservations or catering, call us at <a href="tel:+14088586274">(408) 858-6274</a>. <br/> </p>
         <p className="about-center">From street food favorites to home-cooked classics, our menu is a celebration of Indian culinary heritage. Join us for a meal that feels like home, whether you’re craving a comforting curry or a bold new taste.</p>
           <div className="about-buttons">
             <a className="about-btn" href="/menu"><span>Our Menu</span></a>
