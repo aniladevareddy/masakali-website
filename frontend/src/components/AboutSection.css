@@ -106,8 +106,7 @@ body {
   z-index: 0;
   transition: width 0.35s cubic-bezier(.4,1,.6,1);
 }
-  color: #fff !important;
-}
+
 .about-btn:hover::before {
   width: 100%;
 }
