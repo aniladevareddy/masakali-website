@@ -4,8 +4,21 @@ import './ContactSection.css';
 const ContactSection = () => (
   <section className="contact-section">
     <h2>Contact Us</h2>
-    <p>Call us at <a href="tel:+15551234567">(555) 123-4567</a></p>
-    <p>Email: <a href="mailto:contact@masakalirestaurant.com">contact@masakalirestaurant.com</a></p>
+    <p>Call us at <a href="tel:+14088586274">(408) 858-6274</a></p>
+    <p>Email: <a href="mailto:masakalicalifornia@gmail.com">masakalicalifornia@gmail.com</a></p>
+    <p>Location: <a href="https://www.google.com/maps/search/?api=1&query=10310+S+De+Anza+Blvd,+Cupertino,+CA" target="_blank" rel="noopener noreferrer">10310 S De Anza Blvd, Cupertino, CA</a></p>
+    <div className="map-embed" style={{ maxWidth: '100%', height: '320px', marginTop: '0.5rem' }}>
+      <iframe
+        title="Masakali California Location"
+        src="https://www.google.com/maps?q=10310+S+De+Anza+Blvd,+Cupertino,+CA&output=embed"
+        width="100%"
+        height="320"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   </section>
 );
 

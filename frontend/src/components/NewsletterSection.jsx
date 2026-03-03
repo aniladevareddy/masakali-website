@@ -7,7 +7,7 @@ const NewsletterSection = () => (
     <h2>Inquiries</h2>
     <p>
       For all inquiries, please email us at
-      {' '}<a href="mailto:info@masakali.com">info@masakali.com</a>
+      {' '}<a href="mailto:masakalicalifornia@gmail.com">masakalicalifornia@gmail.com</a>
     </p>
   </section>
 );

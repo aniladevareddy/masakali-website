@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom';
 // Contact strip above navbar
 const ContactStrip = () => (
   <div className="contact-strip-inner">
-    <a href="tel:(514) 228-6777" className="contact-link">
-      <i className="fa fa-phone"></i> (514) 228-6777
+    <a href="tel:+14088586274" className="contact-link">
+      <i className="fa fa-phone"></i> (408) 858-6274
     </a>
     <a href="https://www.google.com/maps/search/?api=1&query=10310+S+De+Anza+Blvd,+Cupertino,+CA" target="_blank" rel="noopener noreferrer" className="contact-link">
       <i className="fa fa-map-marker"></i> 10310 S De Anza Blvd, Cupertino, CA
