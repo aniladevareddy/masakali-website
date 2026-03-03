@@ -18,6 +18,7 @@ import MenuPage from './MenuPage.jsx';
 import ReservationPage from './pages/ReservationPage.jsx';
 import CateringPage from './pages/CateringPage.jsx';
 import AboutPage from './AboutPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
 import axios from 'axios'
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <Route path="/reservation" element={<ReservationPage />} />
       <Route path="/catering" element={<CateringPage />} />
       <Route path="/about" element={<><Navbar /><AboutPage /></>} />
+      <Route path="/contact" element={<><Navbar /><ContactPage /></>} />
       <Route path="/drinks" element={<><Navbar /><DrinksPage /></>} />
     </Routes>
   );

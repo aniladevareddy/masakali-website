@@ -1,6 +1,12 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./AboutPage.css";
 import masalaPapad from "./assets/img/masala-papad.png";
+import img121 from './assets/img/121.png';
+import img122 from './assets/img/122.png';
+import img123 from './assets/img/123.png';
+import img124 from './assets/img/124.png';
+import BrandArea from './components/BrandArea';
 
 export default function AboutPage() {
   return (
@@ -27,24 +33,72 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="about-page-section about-values">
-        <h2>Our Values</h2>
-        <div className="values-grid">
-          <div className="value-card">
-            <h3>Authenticity</h3>
-            <p>Recipes rooted in tradition, prepared with love and care.</p>
-          </div>
-          <div className="value-card">
-            <h3>Quality</h3>
-            <p>Fresh ingredients, responsibly sourced, and consistently delicious.</p>
-          </div>
-          <div className="value-card">
-            <h3>Community</h3>
-            <p>We celebrate gatherings, family recipes, and shared meals.</p>
+      
+
+      <section className="about-page-section about-content">
+        <h4 className="section-title">OUR STORY</h4>
+        <h3 className="section-subtitle">Welcome to Masakali Indian Cuisine – California</h3>
+        <p className="about-text">Proudly brought to you by Pramod Pamulapati, Mahesh Rachakonda and Vikas B Jalagam Masakali Indian Cuisine has become a beloved name in Canada for its authentic Indian flavors and warm hospitality. Now, we're excited to bring that same passion to California, right in the cupertino at 10310 S De Anza Blvd.</p>
+        <p className="about-text">At Masakali, we blend the traditional with the contemporary, offering a rich menu of Indian classics—from aromatic curries and biryanis to sizzling tandoori dishes and handcrafted breads. Every dish is a celebration of India’s diverse culinary heritage, prepared with premium ingredients and genuine care.</p>
+        <p className="about-text">With a focus on quality, freshness, and inclusivity, our menu features ample vegetarian, vegan, and gluten-free options. Whether you dine in or order out, we strive to deliver a memorable experience every time.</p>
+        <p className="about-text highlight">Opening April 15, 2026 – Join us and taste the difference.</p>
+        <Link to="/reservation" className="about-button">Make Reservation</Link>
+      </section>
+
+      <BrandArea />
+
+      <section className="restaurant-gallery">
+        <div className="container">
+          <h2 className="section-title">Our Restaurant's</h2>
+          <p className="section-subtitle">Experience our ambiance and culinary delights</p>
+
+          <div className="gallery-grid">
+            <div className="gallery-item">
+              <img src={img121} alt="Restaurant interior with elegant dining setup" className="img-responsive" />
+              <div className="overlay">
+                <div className="caption">Masakali Resto Bar</div>
+                <div className="caption">
+                  <a href="https://masakalirestrobar.ca/" target="_blank" rel="noopener noreferrer" style={{color: 'white'}}>97 Clarence St, Byward Mkt, Ottawa</a>
+                  <a style={{color: 'rgb(255,255,255)', marginLeft: '8px'}} href="tel:(613) 789-6777">(613) 789-6777</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="gallery-item">
+              <img src={img122} alt="Chef preparing food in our kitchen" className="img-responsive" />
+              <div className="overlay">
+                <div className="caption">Masakali Restaurant</div>
+                <div className="caption">
+                  <a href="https://masakaliottawa.ca/" target="_blank" rel="noopener noreferrer" style={{color: 'white'}}>5507 Hazeldean Rd, Stittsville, Ottawa</a>
+                  <a style={{color: 'rgb(255,255,255)', marginLeft: '8px'}} href="tel:(613) 878-3939">(613) 878-3939</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="gallery-item">
+              <img src={img123} alt="Delicious signature dish presentation" className="img-responsive" />
+              <div className="overlay">
+                <div className="caption">Masakali Willington</div>
+                <div className="caption">
+                  <a href="https://masakaliottawa.ca/" target="_blank" rel="noopener noreferrer" style={{color: 'white'}}>1111 Wellington St, Ottawa</a>
+                  <a style={{color: 'rgb(255,255,255)', marginLeft: '8px'}} href="tel:(613) 792-9777">(613) 792-9777</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="gallery-item">
+              <img src={img124} alt="Outdoor seating area with beautiful ambiance" className="img-responsive" />
+              <div className="overlay">
+                <div className="caption">Rangde Indian Cuisine</div>
+                <div className="caption">
+                  <a href="https://www.rangdeottawa.ca/" target="_blank" rel="noopener noreferrer" style={{color: 'white'}}>700 March Rd, Kanata, Ottawa</a>
+                  <a style={{color: 'rgb(255,255,255)', marginLeft: '8px'}} href="tel:(613) 595-0777">(613) 595-0777</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
      
     </main>
   );
