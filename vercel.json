@@ -21,7 +21,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/dist/index.html"
+      "dest": "/index.html"
     }
   ],
   "buildCommand": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
