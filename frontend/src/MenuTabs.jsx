@@ -1,14 +1,14 @@
 import { useState } from "react";
 
 // Appetizers
-import img11 from "./assets/img/11.png";
+import img11 from "./assets/img/11.webp";
 import img12 from "./assets/img/12.webp";
-import img13 from "./assets/img/13.png";
+import img13 from "./assets/img/13.webp";
 import img14 from "./assets/img/14.webp";
 
 // Tandoori
 import img15 from "./assets/img/15.webp";
-import img16 from "./assets/img/16.png";
+import img16 from "./assets/img/16.webp";
 import img17 from "./assets/img/17.webp";
 import img18 from "./assets/img/18.webp";
 

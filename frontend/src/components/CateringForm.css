@@ -43,7 +43,7 @@
 }
 /* Unique background for catering form only */
 .catering-form-bg {
-  background: linear-gradient(135deg, #fff8e1cc 80%, #ffe0b2cc 100%), url('/src/assets/img/bg_image1.png') center/cover no-repeat !important;
+  background: linear-gradient(135deg, #fff8e1cc 80%, #ffe0b2cc 100%), url('/src/assets/img/bg_image1.webp') center/cover no-repeat !important;
   border-radius: 1.3rem;
   box-shadow: 0 8px 32px rgba(220,180,120,0.13);
   border: 2.5px solid #ffb74d;

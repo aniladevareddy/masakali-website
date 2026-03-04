@@ -8,7 +8,7 @@ const AboutSection = () => {
     <section className="about-section">
       <div className="about-container">
         {/* Example logo or image, replace src as needed */}
-        {/* <img alt="masakali logo" src="/src/assets/img/logo.png" className="about-logo" /> */}
+        {/* <img alt="masakali logo" src="/src/assets/img/logo.webp" className="about-logo" /> */}
         <h1 className="about-header">About Us </h1>
         <h2 className="about-subheader">Authentic Indian Cuisine</h2>
         <p className="about-center">Welcome to Masakali</p>
