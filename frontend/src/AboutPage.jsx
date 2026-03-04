@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./AboutPage.css";
-import masalaPapad from "./assets/img/masala-papad.png";
-import img121 from './assets/img/121.png';
-import img122 from './assets/img/122.png';
-import img123 from './assets/img/123.png';
-import img124 from './assets/img/124.png';
+import masalaPapad from "./assets/img/masala-papad.webp";
+import img121 from './assets/img/121.webp';
+import img122 from './assets/img/122.webp';
+import img123 from './assets/img/123.webp';
+import img124 from './assets/img/124.webp';
 import BrandArea from './components/BrandArea';
 
 export default function AboutPage() {

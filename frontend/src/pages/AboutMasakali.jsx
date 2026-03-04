@@ -1,6 +1,6 @@
 import React from 'react';
 import '../AboutPage.css';
-import aboutImg from '../assets/img/masala-papad.png';
+import aboutImg from '../assets/img/masala-papad.webp';
 import { Link } from 'react-router-dom';
 
 const AboutMasakali = () => (

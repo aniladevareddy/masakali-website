@@ -3,19 +3,19 @@ import React, { useEffect, useRef, useState } from 'react';
 import './GallerySection.css';
 
 
-import g1 from '../assets/img/g1.png';
-import g2 from '../assets/img/g2.png';
-import g3 from '../assets/img/g3.png';
-import gg3 from '../assets/img/gg3.png';
-import gg4 from '../assets/img/gg4.png';
-import gg5 from '../assets/img/gg5.png';
-import img12 from '../assets/img/12.png';
-import img14 from '../assets/img/14.png';
-import img15 from '../assets/img/15.png';
-import img17 from '../assets/img/17.png';
-import img18 from '../assets/img/18.png';
-import img19 from '../assets/img/19.png';
-import img20 from '../assets/img/20.png';
+import g1 from '../assets/img/g1.webp';
+import g2 from '../assets/img/g2.webp';
+import g3 from '../assets/img/g3.webp';
+import gg3 from '../assets/img/gg3.webp';
+import gg4 from '../assets/img/gg4.webp';
+import gg5 from '../assets/img/gg5.webp';
+import img12 from '../assets/img/12.webp';
+import img14 from '../assets/img/14.webp';
+import img15 from '../assets/img/15.webp';
+import img17 from '../assets/img/17.webp';
+import img18 from '../assets/img/18.webp';
+import img19 from '../assets/img/19.webp';
+import img20 from '../assets/img/20.webp';
 
 
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import './BrandArea.css';
-import b1 from '../assets/img/brand/1.png';
-import b2 from '../assets/img/brand/2.png';
-import b3 from '../assets/img/brand/3.png';
-import b4 from '../assets/img/brand/4.png';
+import b1 from '../assets/img/brand/1.webp';
+import b2 from '../assets/img/brand/2.webp';
+import b3 from '../assets/img/brand/3.webp';
+import b4 from '../assets/img/brand/4.webp';
 
 const locations = [
   { img: b1, map: 'https://maps.app.goo.gl/MTivtQCeVMtYRRjh9', addr: '5507 Hazeldean Rd, Stittsville, Ottawa', phone: '(613) 878-3939' },

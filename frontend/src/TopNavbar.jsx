@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import lono from "./assets/img/logo.png"; 
+import lono from "./assets/img/logo.webp"; 
 
 export default function TopNavbar() {
   return (

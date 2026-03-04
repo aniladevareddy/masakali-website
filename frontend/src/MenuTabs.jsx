@@ -2,27 +2,27 @@ import { useState } from "react";
 
 // Appetizers
 import img11 from "./assets/img/11.png";
-import img12 from "./assets/img/12.png";
+import img12 from "./assets/img/12.webp";
 import img13 from "./assets/img/13.png";
-import img14 from "./assets/img/14.png";
+import img14 from "./assets/img/14.webp";
 
 // Tandoori
-import img15 from "./assets/img/15.png";
+import img15 from "./assets/img/15.webp";
 import img16 from "./assets/img/16.png";
-import img17 from "./assets/img/17.png";
-import img18 from "./assets/img/18.png";
+import img17 from "./assets/img/17.webp";
+import img18 from "./assets/img/18.webp";
 
 // Biryani
-import img19 from "./assets/img/19.png";
-import img20 from "./assets/img/20.png";
-import img21 from "./assets/img/21.png";
-import img22 from "./assets/img/22.png";
+import img19 from "./assets/img/19.webp";
+import img20 from "./assets/img/20.webp";
+import img21 from "./assets/img/21.webp";
+import img22 from "./assets/img/22.webp";
 
 // Curries
-import img23 from "./assets/img/23.png";
-import img24 from "./assets/img/24.png";
-import img25 from "./assets/img/25.png";
-import img26 from "./assets/img/26.png";
+import img23 from "./assets/img/23.webp";
+import img24 from "./assets/img/24.webp";
+import img25 from "./assets/img/25.webp";
+import img26 from "./assets/img/26.webp";
 
 const menuData = [
   {

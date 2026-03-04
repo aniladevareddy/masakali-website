@@ -4,7 +4,7 @@
 
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import logo from '../assets/img/logo.png';
+import logo from '../assets/img/logo.webp';
 import { Link } from 'react-router-dom';
 import contactInfo from '../data/contactInfo';
 
