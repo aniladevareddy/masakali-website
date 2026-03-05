@@ -18,7 +18,7 @@
 }
 .butter-side:hover { transform: translateY(-50%) scale(1.03); box-shadow: 0 14px 34px rgba(0,0,0,0.16); }
 .butter-side .bc-text { font-weight: 700; color: #d30000; font-size: 0.96rem; }
-.butter-side .bc-sub { color: #333; font-weight: 600; font-size: 0.86rem; }
+.butter-side .bc-sub { color: var(--text-color); font-weight: 600; font-size: 0.86rem; }
 
 /* hide on small screens */
 @media (max-width: 700px) {
@@ -51,7 +51,7 @@
   justify-content: center;
   color: #777;
 }
-.home-contact .contact-item { margin: 0.35rem 0; color: #333; }
+.home-contact .contact-item { margin: 0.35rem 0; color: var(--text-color); }
 .home-contact .contact-actions { margin-top: 0.8rem; display: flex; gap: 8px; }
 .home-contact .contact-btn { padding: 0.5rem 0.9rem; border-radius: 8px; background: #ffb74d; color: #fff; text-decoration: none; font-weight: 700; }
 
@@ -89,7 +89,7 @@
   gap: 12px;
   margin-bottom: 1rem;
 }
-.home-menu-section h2 { margin: 0; font-size: 1.8rem; color: #333; }
+.home-menu-section h2 { margin: 0; font-size: 1.8rem; color: var(--text-color); }
 .home-menu-section .menu-sub { color: #666; font-size: 0.95rem; font-weight: 600; }
 
 @media (max-width: 700px) {

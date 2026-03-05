@@ -29,7 +29,7 @@
   align-items: start;
 }
 
-.contact-details p { margin: 0.35rem 0; color: #333; }
+.contact-details p { margin: 0.35rem 0; color: var(--text-color); }
 
 .contact-map {
   width: 100%;

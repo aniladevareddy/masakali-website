@@ -1,10 +1,12 @@
 .hours-section {
   padding: 3rem 0;
-  background: #fafafa;
+  background: var(--bg-color, #fafafa);
+  color: var(--text-color);
   text-align: center;
 }
 .hours-section ul {
   display: inline-block;
   text-align: left;
   margin-top: 1rem;
+  color: var(--text-color);
 }

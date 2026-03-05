@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./AboutPage.css";
-import masalaPapad from "./assets/img/masala-papad.webp";
 import img121 from './assets/img/121.webp';
 import img122 from './assets/img/122.webp';
 import img123 from './assets/img/123.webp';

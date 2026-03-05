@@ -89,6 +89,15 @@
   box-shadow: 0 2px 12px rgba(0,0,0,0.10);
   object-fit: cover;
 }
+
+/* Make catering image match reservation image size: 329x220 */
+.catering-side-image {
+  width: 329px;
+  height: 220px;
+  max-width: none;
+  min-width: none;
+  min-height: none;
+}
 .reservation-content-col, .catering-content-col {
   flex: 1 1 0;
   display: flex;

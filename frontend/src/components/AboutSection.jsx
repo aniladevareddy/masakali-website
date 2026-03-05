@@ -1,11 +1,11 @@
 
 import { useNavigate } from 'react-router-dom';
-
+import './AboutSection.css';
 
 const AboutSection = () => {
   const navigate = useNavigate();
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-container">
         {/* Example logo or image, replace src as needed */}
         {/* <img alt="masakali logo" src="/src/assets/img/logo.webp" className="about-logo" /> */}
@@ -25,4 +25,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-import './AboutSection.css';
+ 

@@ -3,9 +3,23 @@
   min-height: 100%;
   box-sizing: border-box;
 }
+/* Theme variables */
+:root {
+  --text-color: #333;
+  --bg-color: #fff;
+  --card-bg: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #e9e9e9;
+    --bg-color: #242424;
+    --card-bg: #2b2b2b;
+  }
+}
 body {
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
-  color: #333;
+  color: var(--text-color);
+  background: var(--bg-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -54,11 +68,11 @@ body {
   padding-right: 30px;
 }
 /* AboutPage styles */
-.about-page { padding: 2rem; background: linear-gradient(180deg, #fffaf6 0%, #fffdf8 100%); }
-.about-hero { display: flex; align-items: center; justify-content: center; padding: 4rem 1rem; background: linear-gradient(90deg, #fff1e0, #fffef9); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); margin-bottom: 1.25rem; }
+.about-page { padding: 2rem; background: var(--bg-color, linear-gradient(180deg, #fffaf6 0%, #fffdf8 100%)); padding-bottom: 3rem; }
+.about-hero { display: flex; align-items: center; justify-content: center; padding: 4rem 1rem; background: var(--card-bg, linear-gradient(90deg, #fff1e0, #fffef9)); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); margin-bottom: 1.25rem; }
 .about-hero-inner { max-width: 900px; text-align: center; }
 .about-hero h1 { margin: 0 0 0.5rem; font-size: 2.1rem; }
-.about-hero p { margin: 0 0 1rem; color: #5b5b5b; }
+.about-hero p { margin: 0 0 1rem; color: var(--text-color); }
 .about-hero button { padding: 0.6rem 1.1rem; border-radius: 8px; border: none; background: #515c4c; color: #fff; font-weight: 600; cursor: pointer; }
 
 .about-page-section {
@@ -69,13 +83,13 @@ body {
   padding: 0 1rem;
 }
 .about-page-section h2 { margin-bottom: 0.75rem; font-size: 1.6rem; }
-.about-page-section p { color: #555; line-height: 1.7; }
+.about-page-section p { color: var(--text-color); line-height: 1.7; }
 
 .values-grid { display: none; }
 .value-card { display: none; }
 
 .team-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
-.team-member { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.03); text-align: center; }
+.team-member { background: var(--card-bg, #fff); padding: 1rem; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.03); text-align: center; }
 .team-photo { width: 100%; height: 160px; border-radius: 8px; background-size: cover; background-position: center; margin-bottom: 0.6rem; }
 
 .about-cta { text-align: center; padding: 1.25rem; margin-top: 1.25rem; }
@@ -89,10 +103,10 @@ body {
 
 /* Our Story section */
 .about-content { max-width: 900px; margin: 1.5rem auto; text-align: left; padding: 1.25rem; }
-.about-content .section-title { font-size: 0.9rem; color: #999; margin-bottom: 0.25rem; font-weight: 700; letter-spacing: 1px; }
-.about-content .section-subtitle { margin: 0.25rem 0 0.75rem 0; font-size: 1.5rem; color: #222; }
-.about-content .about-text { color: #444; line-height: 1.6; margin-bottom: 0.75rem; }
-.about-content .about-text.highlight { font-weight: 700; color: #2d5b2f; }
+.about-content .section-title { font-size: 0.9rem; color: var(--text-color); margin-bottom: 0.25rem; font-weight: 700; letter-spacing: 1px; }
+.about-content .section-subtitle { margin: 0.25rem 0 0.75rem 0; font-size: 1.5rem; color: var(--text-color); }
+.about-content .about-text { color: var(--text-color); line-height: 1.6; margin-bottom: 0.75rem; }
+.about-content .about-text.highlight { font-weight: 700; color: var(--accent-color, #2d5b2f); }
 .about-button { display: inline-block; margin-top: 0.6rem; padding: 0.5rem 1rem; background: #515c4c; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 700; }
 .about-button:hover { background: #3f4a3f; }
 
@@ -107,13 +121,12 @@ body {
   .about-hero { padding: 2rem 1rem; border-radius: 8px; }
   .about-hero h1 { font-size: 1.6rem; }
   .about-hero p { font-size: 0.95rem; }
-  .about-hero button { width: 100%; display: block; }
-
+  .about-hero button { width: auto; max-width: 320px; display: block; margin: 0.5rem auto; }
   .about-page-section { padding: 0 0.5rem; max-width: 100%; }
   .about-content { padding: 0.75rem; text-align: center; }
   .about-content .section-subtitle { font-size: 1.1rem; }
   .about-content .about-text { font-size: 0.95rem; }
-  .about-button { display: block; width: 100%; text-align: center; }
+  .about-button { display: block; width: auto; max-width: 320px; margin: 0.5rem auto; text-align: center; }
 
   /* Brand carousel: make slides wider so only one shows per view */
   .brand-carousel-track { gap: 14px; padding-left: 8px; padding-right: 8px; }
@@ -125,13 +138,13 @@ body {
 }
 
 /* Restaurant Gallery */
-.restaurant-gallery { padding: 2.5rem 0; background: #fff; }
+.restaurant-gallery { padding: 2.5rem 0; background: var(--bg-color, #fff); color: var(--text-color); }
 .restaurant-gallery .section-title { text-align: center; font-size: 1.25rem; margin-bottom: 0.25rem; }
-.restaurant-gallery .section-subtitle { text-align: center; color: #666; margin-bottom: 1rem; }
+.restaurant-gallery .section-subtitle { text-align: center; color: var(--text-color); opacity: 0.85; margin-bottom: 1rem; }
 .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 1200px; margin: 0 auto; }
 .gallery-item { position: relative; overflow: hidden; border-radius: 8px; }
 .gallery-item .img-responsive { width: 100%; height: 220px; object-fit: cover; display: block; }
-.gallery-item .overlay { position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 60%); color: #fff; padding: 0.75rem; transition: transform 0.22s ease; transform: translateY(0); }
+.gallery-item .overlay { position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 60%); color: var(--overlay-text, #fff); padding: 0.75rem; transition: transform 0.22s ease; transform: translateY(0); }
 .gallery-item .caption { font-size: 0.95rem; margin: 0.15rem 0; }
 .gallery-item:hover .overlay { transform: translateY(-6px); }
 
